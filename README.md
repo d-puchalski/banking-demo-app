@@ -1,7 +1,7 @@
 # Banking Demo Application
 ## .NET CORE 6 + Angular 13
 ---
-useful links:
+
 - My resume: https://job.puchalski.org/
 - Demo hosted on Azure: https://demo.puchalski.org/
 
