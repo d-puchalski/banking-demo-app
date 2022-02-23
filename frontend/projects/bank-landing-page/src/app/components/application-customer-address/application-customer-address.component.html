@@ -1,0 +1,115 @@
+<section class="bg-half-170 d-table w-100" style="background: url('/assets/images/bg3.jpg') center center;">
+  <div class="bg-overlay"></div>
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-7 col-md-6">
+        <div class="title-heading mt-4">
+          <h1 class="display-4 fw-bold text-white title-dark mb-3">Take advantage of the good conditions</h1>
+          <p class="para-desc text-white">With a Cash Loan in the promotion, you can get up to 50.000€ commission-free
+            (APR 10.00%)</p>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-6 mt-4 pt-2 mt-sm-0 pt-sm-0">
+        <div class="card shadow rounded border-0 ms-lg-5">
+          <div class="card-body">
+
+            <h4 class="text-center mt-3">Address information</h4>
+            <form [formGroup]="form">
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="text-muted">
+                    Address 1
+                    <input type="text" class="form-control" formControlName="address1" />
+                    <span class="text-danger" *ngIf="form.get('address1')?.invalid && isValidated">
+                      <div *ngIf="form.get('address1')?.hasError('required')">
+                        Address 1 is required.
+                      </div>
+                    </span>
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <p class="text-muted">
+                    Address 2
+                    <input type="text" class="form-control" formControlName="address2" />
+                  </p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-6">
+                  <p class="text-muted">
+                    Zip
+                    <input type="text" class="form-control" formControlName="zip" />
+                    <span class="text-danger" *ngIf="form.get('zip')?.invalid && isValidated">
+                      <div *ngIf="form.get('zip')?.hasError('required')">
+                        Zip is required.
+                      </div>
+                    </span>
+                  </p>
+                </div>
+                <div class="col-md-6">
+                  <p class="text-muted">
+                    Country
+                    <select class="form-control" formControlName="country">
+                      <option value="PL">Poland</option>
+                      <option value="DE">Germany</option>
+                      <option value="NO">Norway</option>
+                    </select>
+                    <span class="text-danger" *ngIf="form.get('country')?.invalid && isValidated">
+                      <div *ngIf="form.get('country')?.hasError('required')">
+                        Country is required.
+                      </div>
+                    </span>
+                  </p>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="text-muted">
+                      Phone
+                      <input type="text" class="form-control" formControlName="phone" />
+                      <span class="text-danger" *ngIf="form.get('phone')?.invalid && isValidated">
+                        <div *ngIf="form.get('phone')?.hasError('required')">
+                          Phone is required.
+                        </div>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-md-12">
+                    <p class="text-muted">
+                      Email
+                      <input type="email" class="form-control" formControlName="email" />
+                      <span class="text-danger" *ngIf="form.get('email')?.invalid && isValidated">
+                        <div *ngIf="form.get('email')?.hasError('required')">
+                          Email is required.
+                        </div>
+                        <div *ngIf="form.get('email')?.hasError('pattern')">
+                          Please provide a valid email address.
+                        </div>
+                      </span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </form>
+            <div class="mt-4">
+              <div class="row">
+                <div class="col-md-6">
+                  <a routerLink="/customer" class="btn btn-primary w-100"><i class="fas fa-arrow-circle-left"></i>
+                    Customer</a>
+                </div>
+                <div class="col-md-6">
+                  <a (click)='onNext()' class="btn btn-primary w-100">Verify <i
+                      class="fas fa-arrow-circle-right"></i></a>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

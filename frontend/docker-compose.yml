@@ -1,0 +1,8 @@
+version: "3.8"
+services:
+  banking_demo_angular:
+    container_name: banking_demo_angular_container
+    image: banking_demo_angular_image:dev
+    build: .
+    ports:
+      - "8050:8050"

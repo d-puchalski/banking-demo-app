@@ -1,0 +1,52 @@
+<header id="topnav" class="defaultscroll sticky nav-sticky">
+  <div class="container">
+    <!-- Logo container-->
+    <a class="logo" href="/">
+      <h2 class="pt-3">GIRO BANK</h2>
+    </a>
+
+    <!-- End Logo container-->
+    <div class="menu-extras">
+      <div class="menu-item">
+        <!-- Mobile menu toggle-->
+        <a class="navbar-toggle" id="isToggle" onclick="toggleMenu()">
+          <div class="lines">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+        </a>
+        <!-- End mobile menu toggle-->
+      </div>
+    </div>
+
+    <!--Login button Start-->
+    <ul class="buy-button list-inline mb-0">
+      <li class="list-inline-item ps-1 mb-0">
+        <a (click)="login()">
+          <div class="btn btn-icon btn-pills btn-primary">
+            <i class="far fa-user-circle"></i>
+          </div>
+        </a>
+      </li>
+      <li class="list-inline-item ps-1 mb-0" *ngIf="isLoggedIn$ | async">
+        <a (click)="logout()">
+          Logout
+        </a>
+      </li>
+    </ul>
+    <!--Login button End-->
+
+    <div id="navigation">
+      <!-- Navigation Menu-->
+      <ul class="navigation-menu nav-light nav-right">
+        <li><a href="/" class="sub-menu-item">Apply for a Loan</a></li>
+      </ul>
+      <!--end navigation menu-->
+    </div>
+    <!--end navigation-->
+  </div>
+  <!--end container-->
+</header>
+<!--end header-->
+<!-- Navbar End -->
