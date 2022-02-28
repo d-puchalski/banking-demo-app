@@ -16,6 +16,7 @@
 - Entity Framework model: https://github.com/d-puchalski/banking-demo-app/blob/main/backend/Extensions/BankingDemo.Core.Extensions.EF/Models/Calculation.cs
 - Startup.cs: https://github.com/d-puchalski/banking-demo-app/blob/main/backend/BankingDemo.Core.SharedService/Startup.cs
 - Program.cs: https://github.com/d-puchalski/banking-demo-app/blob/main/backend/BankingDemo.Core.SharedService/Program.cs
+- Unit tests: https://github.com/d-puchalski/banking-demo-app/blob/main/backend/UnitTests/BankingDemo.Core.CalculationModule.Test/CalculatorServiceTest.cs
 #### Frontend:
 - Docker file: https://github.com/d-puchalski/banking-demo-app/blob/main/frontend/Dockerfile
 - Docker compose: https://github.com/d-puchalski/banking-demo-app/blob/main/frontend/docker-compose.yml
