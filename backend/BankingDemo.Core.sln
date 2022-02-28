@@ -25,15 +25,19 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingDemo.Core.ProfileMod
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingDemo.Core.AccountModule", "Modules\BankingDemo.Core.AccountModule\BankingDemo.Core.AccountModule.csproj", "{A431F30E-4621-4697-9335-7BB9B7ED790C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingDemo.Core.AccountService", "BankingDemo.Core.AccountService\BankingDemo.Core.AccountService.csproj", "{12D3F550-39D8-4DC9-B99C-45F9D617B9F3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingDemo.Core.AccountService", "BankingDemo.Core.AccountService\BankingDemo.Core.AccountService.csproj", "{12D3F550-39D8-4DC9-B99C-45F9D617B9F3}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Scoring", "Scoring", "{E07AFB3D-1786-4C34-A9FB-CE5D65A690D1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingDemo.Core.Extensions.Scoring.Interface", "Extensions\Scoring\BankingDemo.Core.Extensions.Scoring.Interface\BankingDemo.Core.Extensions.Scoring.Interface.csproj", "{6A6A818B-50DA-4099-BC00-22FEB46C8A43}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingDemo.Core.Extensions.Scoring.Interface", "Extensions\Scoring\BankingDemo.Core.Extensions.Scoring.Interface\BankingDemo.Core.Extensions.Scoring.Interface.csproj", "{6A6A818B-50DA-4099-BC00-22FEB46C8A43}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LaBanca", "Extensions\Scoring\LaBanca\LaBanca.csproj", "{8C2EC2CC-0C75-479D-870C-6A118FD59179}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LaBanca", "Extensions\Scoring\LaBanca\LaBanca.csproj", "{8C2EC2CC-0C75-479D-870C-6A118FD59179}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingDemo.Core.Extensions.Scoring.Factory", "Extensions\Scoring\BankingDemo.Core.Extensions.Scoring.Factory\BankingDemo.Core.Extensions.Scoring.Factory.csproj", "{43DBD87D-3896-4A7C-BE0E-5D1EC39940B5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BankingDemo.Core.Extensions.Scoring.Factory", "Extensions\Scoring\BankingDemo.Core.Extensions.Scoring.Factory\BankingDemo.Core.Extensions.Scoring.Factory.csproj", "{43DBD87D-3896-4A7C-BE0E-5D1EC39940B5}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "UnitTests", "UnitTests", "{939CA339-2343-4245-BAF6-716DFEF79857}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BankingDemo.Core.CalculationModule.Test", "UnitTests\BankingDemo.Core.CalculationModule.Test\BankingDemo.Core.CalculationModule.Test.csproj", "{1DAADA85-C424-42E7-B914-47C0803D215D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -93,6 +97,10 @@ Global
 		{43DBD87D-3896-4A7C-BE0E-5D1EC39940B5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{43DBD87D-3896-4A7C-BE0E-5D1EC39940B5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{43DBD87D-3896-4A7C-BE0E-5D1EC39940B5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1DAADA85-C424-42E7-B914-47C0803D215D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1DAADA85-C424-42E7-B914-47C0803D215D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1DAADA85-C424-42E7-B914-47C0803D215D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1DAADA85-C424-42E7-B914-47C0803D215D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -108,6 +116,8 @@ Global
 		{6A6A818B-50DA-4099-BC00-22FEB46C8A43} = {E07AFB3D-1786-4C34-A9FB-CE5D65A690D1}
 		{8C2EC2CC-0C75-479D-870C-6A118FD59179} = {E07AFB3D-1786-4C34-A9FB-CE5D65A690D1}
 		{43DBD87D-3896-4A7C-BE0E-5D1EC39940B5} = {E07AFB3D-1786-4C34-A9FB-CE5D65A690D1}
+		{939CA339-2343-4245-BAF6-716DFEF79857} = {5256A5ED-3D6D-46EA-8804-9EEDC2D72134}
+		{1DAADA85-C424-42E7-B914-47C0803D215D} = {939CA339-2343-4245-BAF6-716DFEF79857}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {021E6C38-BAEC-45D3-8AB0-958DA6ED55E8}

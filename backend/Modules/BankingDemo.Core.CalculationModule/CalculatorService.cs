@@ -22,9 +22,9 @@ namespace BankingDemo.Core.CalculationModule {
         }
 
         public async Task<GetCalculationResponse> Create(GetCalculationRequest request) {
-            var (valid, response) = await checkClientValues(request);
+            var (valid, response) = await CheckClientValues(request);
             if (valid) {
-                var scoreResult = await score(request, response);
+                var scoreResult = await Score(request);
                 response.ScoringResult = (Enums.ScoringResultEnum)Enum.Parse(typeof(Enums.ScoringResultEnum), scoreResult.Score.ToString());
                 if (scoreResult != null && scoreResult.Score == ScoringResultEnum.Positive) {
                     //we are not storing score results
@@ -42,15 +42,15 @@ namespace BankingDemo.Core.CalculationModule {
             return response;
         }
 
-        private async Task<ScoringResult> score(GetCalculationRequest request, GetCalculationResponse response) {
+        public async Task<ScoringResult> Score(GetCalculationRequest request) {
             return await new ScoringFactory(ScoringValidationModelsEnum.LA_BANCA_EXECUTOR).Score(new ScoringRequest {
                 TotalAmount = request.Amount,
-                PeriodicAmount = response.Instalment,
+                PeriodicAmount = request.Instalment,
                 SSN = request.Owner.SSN
             });
         }
 
-        private async Task<(bool, GetCalculationResponse)> checkClientValues(GetCalculationRequest request) {
+        public async Task<(bool, GetCalculationResponse)> CheckClientValues(GetCalculationRequest request) {
             var response = new GetCalculationResponse();
             response.Rate = 10;
             double q = 1 + (Convert.ToDouble(response.Rate) / 100 / 12);
