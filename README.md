@@ -30,5 +30,5 @@
 ## To do:
 - Add netbank functionality
 - Add Azure b2b login
-- Add e2e test example
 - Add document handling in onboarding project
+- Add anular unit test examples
